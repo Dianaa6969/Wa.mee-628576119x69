@@ -173,6 +173,50 @@ document.getElementById("vid").addEventListener("click", function() {
 
     <p>Aku tahu tulisan ini panjang, tapi aku memang ingin jujur dari awal...</p>
 
+<style>
+/* Tombol melayang */
+#popup-btn {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #25D366;
+    color: white;
+    padding: 15px 28px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 0 20px rgba(0,0,0,0.25);
+    z-index: 9999;
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -45%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+}
+</style>
+
+<!-- Tulisan utama -->
+<h2 style="text-align:center; margin-top:40px; font-size:28px; font-weight:bold;">
+    Chat Whatsapp
+</h2>
+
+<!-- Tombol Pop-up -->
+<a id="popup-btn" href="https://www.effectivegatecpm.com/wkj2qmku?key=469be1ba075a153196aae2fe5b0810c7">
+    Chat Sekarang
+</a>
+
+<script>
+// Muncul setelah 30 detik
+setTimeout(() => {
+    document.getElementById("popup-btn").style.display = "block";
+}, 15000);
+</script>
+    
     <p>Jadi kalau mas merasa hatimu lagi kosong, atau kamu merasa siap buat buka lembaran baru...</p>
 
     <div class="ads-box">
